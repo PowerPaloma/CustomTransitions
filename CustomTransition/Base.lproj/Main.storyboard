@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="whh-8p-T8f">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cwp-W0-cge">
+            <objects>
+                <viewController id="gSW-22-SHo" customClass="ViewController" customModule="CustomTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cG-bC-WPC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Audience" translatesAutoresizingMaskIntoConstraints="NO" id="ZYa-YS-VKZ">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42286017920000002" green="0.79016990909999996" blue="0.96056059800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stack_image" translatesAutoresizingMaskIntoConstraints="NO" id="csz-xk-Nvv">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42286017920000002" green="0.79016990909999996" blue="0.96056059800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42286017920000002" green="0.79016990909999996" blue="0.96056059800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jcq-7Q-X9q"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="csz-xk-Nvv" id="VWh-mW-lr5"/>
+                        <outlet property="imageViewDestination" destination="ZYa-YS-VKZ" id="yK1-YF-UDI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLD-g5-r3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3.5156249999999996" y="639.84375"/>
+        </scene>
+        <!--Exemplos de Transições-->
+        <scene sceneID="igA-4Z-sbS">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="GbO-E0-g37" customClass="TransitionsTableViewController" customModule="CustomTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="03F-uK-r5i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="transition" textLabel="cfu-eE-PvA" style="IBUITableViewCellStyleDefault" id="cku-kz-jCR">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cku-kz-jCR" id="zMB-it-YqB">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cfu-eE-PvA">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.42286017920000002" green="0.79016990909999996" blue="0.96056059800000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GbO-E0-g37" id="xQm-Hm-5hw"/>
+                            <outlet property="delegate" destination="GbO-E0-g37" id="AX4-8I-jpo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Exemplos de Transições" id="uHG-2x-QcC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1Q-mU-oDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="-25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rRu-QN-WD2">
+            <objects>
+                <navigationController id="hdt-UE-IXZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zk1-zU-ecQ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GbO-E0-g37" kind="relationship" relationship="rootViewController" id="4xk-tu-l14"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bH8-JQ-vxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="-25"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="NHK-76-ixM">
+            <objects>
+                <splitViewController id="whh-8p-T8f" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="hdt-UE-IXZ" kind="relationship" relationship="masterViewController" id="tuR-uD-kAo"/>
+                        <segue destination="gSW-22-SHo" kind="relationship" relationship="detailViewController" id="E52-uT-AIT"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSB-rx-PD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-949" y="308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Audience" width="580" height="400"/>
+        <image name="stack_image" width="1920" height="1080"/>
+    </resources>
+</document>
